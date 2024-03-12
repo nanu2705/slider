@@ -63,7 +63,6 @@ body{
             li{
                 padding: 5px 19px;
                 cursor: pointer;
-                z-index: 1;
                 
                 &:hover{
                    background-color: rgba(0, 0, 255, 0.623);
@@ -175,7 +174,7 @@ body{
    height: 400px; 
    position: relative;
    top: 20px;
-   left: 250px; 
+   left: 300px; 
    border-radius: 5px;
    padding: 20px;
    box-shadow: 0 15px 30px rgba(0,0,0,0.3); 
@@ -199,12 +198,12 @@ body{
    }
 
   #prev{ 
-  left: 255px;
+  left: 300px;
   top: 200px;
  }
 
   #next{
-  right: 265px;
+  right: 210px;
   top: 200px;
    } 
 
@@ -234,11 +233,11 @@ body{
    .foodimages{
     display: grid;
     row-gap: 40px;
-    column-gap: 10px;
+    
     justify-content: center;
     grid-template-columns: auto auto auto auto;
     
-  
+   
 
    #active{
     display: block;

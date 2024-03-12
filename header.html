@@ -122,10 +122,10 @@
             <button onclick="cold()">Cold Drink</button>
             <button onclick="fastfood()">Fast food</button>
             <button onclick="tea()">Tea</button>
-            <button onclick="handle()">All</button>
+            <button onclick="all()">All</button>
         </div>
-  
-        <div class="foodimages"> 
+
+        <div class="foodimages">
             
                 <div class="images" id="active">
              <img src="./cappuccino.jpg" >
@@ -293,15 +293,9 @@ if( document.getElementById('active').style.display!=='block'){
     document.getElementById('cold').style.display='none';
     document.getElementById('fastfood').style.display='none';
     document.getElementById('tea').style.display='none';
-    // document.getElementById('handle').style.display='none';
+    document.getElementById('all').style.display='none';
     
 
- }
- else{
-    document.getElementById('active').style.display='block';
-    document.getElementById('cold').style.display='none';
-    document.getElementById('fastfood').style.display='none';
-    document.getElementById('tea').style.display='none';
  }
  
 }
@@ -312,15 +306,12 @@ if( document.getElementById('cold').style.display!=='block'){
     document.getElementById('active').style.display='none';
     document.getElementById('fastfood').style.display='none';
     document.getElementById('tea').style.display='none';
-    // document.getElementById('handle').style.display='none';
+    document.getElementById('all').style.display='none';
     
 
  }
   else{
-    document.getElementById('cold').style.display='block';
-    document.getElementById('active').style.display='none';
-    document.getElementById('fastfood').style.display='none';
-    document.getElementById('tea').style.display='none';
+    document.getElementById('cold').style.display='none';
  }
 }
 function fastfood(){
@@ -330,16 +321,11 @@ if( document.getElementById('fastfood').style.display!=='block'){
     document.getElementById('cold').style.display='none';
     document.getElementById('active').style.display='none';
     document.getElementById('tea').style.display='none';
-    // document.getElementById('handle').style.display='none';
+    document.getElementById('all').style.display='none';
     
 
  }
- else{
-    document.getElementById('fastfood').style.display='block';
-    document.getElementById('cold').style.display='none';
-    document.getElementById('active').style.display='none';
-    document.getElementById('tea').style.display='none';
- }
+
 }
 function tea(){
 
@@ -348,22 +334,17 @@ if( document.getElementById('tea').style.display!=='block'){
     document.getElementById('cold').style.display='none';
     document.getElementById('fastfood').style.display='none';
     document.getElementById('active').style.display='none';
-    // document.getElementById('handle').style.display='none';
-}
-else{
-    document.getElementById('tea').style.display='block';
-    document.getElementById('cold').style.display='none';
-    document.getElementById('fastfood').style.display='none';
-    document.getElementById('active').style.display='none';
+    document.getElementById('all').style.display='none';
+    
+
  }
+ 
 }
-function handle(){
-   
+function all(){
     document.getElementById('cold').style.display='block';
     document.getElementById('fastfood').style.display='block';
     document.getElementById('tea').style.display='block';
     document.getElementById('active').style.display='block';
     }
-
 </script>
 </html>
